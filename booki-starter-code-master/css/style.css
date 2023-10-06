@@ -78,6 +78,15 @@ a {
     width: 65%;
 }
 
+.articles {
+    display: flex;
+    width: 100%;  
+}
+
+.card-hebergement {
+    width: 30%;
+    height: 80px;
+}
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -121,6 +130,12 @@ a {
 
 .populaires-cards .card-rating {
     margin-bottom: 5px;
+}
+
+.filtres{
+    display: flex ;
+    align-items: center;
+    gap: 10px;
 }
 
 
