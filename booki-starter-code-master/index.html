@@ -17,18 +17,18 @@
 <body>
     <div class="main-container">
         <header>
-                <img src="C:\Users\yanis\Desktop\projet booki\booki-starter-code-master\images\logo\Booki.png" alt="logo Booki">
-                <button>
-                    Hébergements
-                </button>
-                <button>
-                    Activités
-                </button>
+                <img src="C:\Users\yanis\Desktop\projet booki\booki-starter-code-master\images\logo\Booki.png" alt="logo Booki" class="logo">
+            <div class="buttonHead">
+                <a href="#">Hébergements</a>
+                <a href="#">Activités</a>
+            </div>
         </header>
         <nav>
+            <div>
             <h3>Trouver votre Hébergements pour des vacances de rêve</h3>
             <p>En plein centre-ville ou en pleine nature</p>
-            <div>
+            </div>
+            <div class="Recherche">
                 <label for="ville"><i class="fa-solid fa-location-dot"></i></label>
                 <input
                   type="text"
@@ -37,12 +37,12 @@
                   placeholder="Ville, pays" />
                   <button>Rechercher</button>
               </div>
-              <div class="filtres">
-                <h4 >Filtres</h4>
-                <button><i class="fa-solid fa-money-bill-1-wave"></i>Économique</button>
-                <button><i class="fa-solid fa-person"></i>Familial</button>
-                <button><i class="fa-solid fa-heart"></i>Romantique</button>
-                <button><i class="fa-solid fa-fire"></i>Nos pépites</button>
+              <div class="filtres"> 
+                <h4 >Filtres</h4>   
+                <a class="buttonFiltres"><i class="fa-solid fa-money-bill-1-wave"></i>&nbsp;Économique</a>
+                <a class="buttonFiltres"><i class="fa-solid fa-person"></i>&nbsp;Familial</a>
+                <a class="buttonFiltres"><i class="fa-solid fa-heart"></i>&nbsp;Romantique</a>
+                <a class="buttonFiltres"><i class="fa-solid fa-fire"></i>&nbsp;Nos pépites</a>
               </div>
               <div>
                 <p><i class="fa-solid fa-circle-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
@@ -52,16 +52,14 @@
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
                     <div>
-                    <h3>Hébergements à Marseille</h3>
+                    <h2 class="Marseille">Hébergements à Marseille</h2>
                     </div>
                     <div class="articles">
                     <article class="card card-hebergement">
                         <img src="C:\Users\yanis\Desktop\projet booki\booki-starter-code-master\images\hebergements\fred-kleber.jpg" alt="Image de la chambre d'hôtel montrant un lit">
-                        <div class="card-content">
-                            <div class="card-txt">
+                        <div class="card-content"> 
                                 <h3 class="card-title">Hôtel du port</h3>
                                 <p class="card-subtitle">Nuit à partir de 52<span class="euro">€</span></p>
-                            </div>
                             <div class="card-rating">
                                 <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                 <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -75,10 +73,8 @@
                     <article class="card card-hebergement">
                         <img src="C:\Users\yanis\Desktop\projet booki\booki-starter-code-master\images\hebergements\febrian-zakaria.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                         <div class="card-content">
-                            <div class="card-txt">
                                 <h3 class="card-title">Hôtel Chez Amina</h3>
                                 <p class="card-subtitle">Nuit à partir de 96<span class="euro">€</span></p>
-                            </div>
                             <div class="card-rating">
                                 <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                 <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -92,10 +88,8 @@
                     <article class="card card-hebergement">
                         <img src="C:\Users\yanis\Desktop\projet booki\booki-starter-code-master\images\hebergements\reisetopia.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                         <div class="card-content">
-                            <div class="card-txt">
                                 <h3 class="card-title">Hôtel Les mouettes</h3>
                                 <p class="card-subtitle">Nuit à partir de 76<span class="euro">€</span></p>
-                            </div>
                             <div class="card-rating">
                                 <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                 <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -109,10 +103,8 @@
                     <article class="card card-hebergement">
                         <img src="C:\Users\yanis\Desktop\projet booki\booki-starter-code-master\images\hebergements\annie-spratt.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                         <div class="card-content">
-                            <div class="card-txt">
                                 <h3 class="card-title">Hôtel de la mer</h3>
                                 <p class="card-subtitle">Nuit à partir de 46<span class="euro">€</span></p>
-                            </div>
                             <div class="card-rating">
                                 <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                 <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -126,10 +118,8 @@
                     <article class="card card-hebergement">
                         <img src="C:\Users\yanis\Desktop\projet booki\booki-starter-code-master\images\hebergements\marcus-loke.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                         <div class="card-content">
-                            <div class="card-txt">
                                 <h3 class="card-title">Auberge La Canabière</h3>
                                 <p class="card-subtitle">Nuit à partir de 25<span class="euro">€</span></p>
-                            </div>
                             <div class="card-rating">
                                 <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                 <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -143,10 +133,8 @@
                     <article class="card card-hebergement">
                         <img src="C:\Users\yanis\Desktop\projet booki\booki-starter-code-master\images\hebergements\nicate-lee.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                         <div class="card-content">
-                            <div class="card-txt">
                                 <h3 class="card-title">Auberge Le Panier</h3>
                                 <p class="card-subtitle">Nuit à partir de 23<span class="euro">€</span></p>
-                            </div>
                             <div class="card-rating">
                                 <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                 <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -157,7 +145,9 @@
                             </div>
                         </div>
                     </article>
+                    
                     </div>
+                    <a href="#"><h4>Afficher plus</h4></a>
                 </section>
                 <section class="populaires">
                     <div class="populaires-title">
@@ -225,6 +215,38 @@
                     </div>
                 </section>
             </div>
+            <section class="activitésMarseille">
+                <div class="title-activités">
+                <p><b>Activités à Marseille</b></p>
+                </div>
+                <div class="activités">
+                    <article class="card card-activités">
+                        <img src="C:\Users\yanis\Desktop\projet booki\booki-starter-code-master\images\activites\reno-laithienne.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                        <div class="card-content">
+                                <p class="card-title">Vieux-port</p>
+                        </div>
+                    </article>
+                    <article class="card card-activités">
+                        <img src="C:\Users\yanis\Desktop\projet booki\booki-starter-code-master\images\activites\paul-hermann.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                        <div class="card-content">
+                                <p class="card-title">Ford de Pomègues</p>
+                        </div>
+                    </article>
+                </article>
+                <article class="card card-activités">
+                    <img src="C:\Users\yanis\Desktop\projet booki\booki-starter-code-master\images\activites\kilyan-sockalingum.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                    <div class="card-content">
+                            <p class="card-title">Parc national des Calanques</p>
+                    </div>
+                </article>
+                <article class="card card-activités">
+                    <img src="C:\Users\yanis\Desktop\projet booki\booki-starter-code-master\images\activites\florian-wehde.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                    <div class="card-content">
+                            <p class="card-title">Notre-Dame-de-la-Garde</p>
+                    </div>
+                </article>
+                </div>
+            </section>
         </main>
         <footer></footer>
     </div>
