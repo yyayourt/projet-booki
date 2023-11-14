@@ -445,7 +445,7 @@ footer {
 
 @media (max-width: 900px) {
   .card-activités {
-    width: 90%;
+    width: 80%;
     height: 200px;
   }
   .activités {
@@ -557,6 +557,10 @@ footer {
     border-radius: 0px;
   }
 
+  .articles {
+    padding: 0px 60px;
+  }
+
   .filtres {
     margin: 15px 0px;
   }
@@ -576,6 +580,7 @@ footer {
 
   .populaires-cards {
     flex-direction: column;
+    padding: 0px 60px;
   }
   .populaires-cards .card {
     margin-top: 15px;
@@ -600,5 +605,31 @@ footer {
     display: flex;
     flex-direction: column;
     height: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .articles {
+    padding: 0px;
+  }
+
+  .populaires-cards {
+    padding: 0px;
+  }
+
+  .card-activités {
+    width: 90%;
+  }
+}
+
+@media (max-width: 370px) {
+  .filtres {
+    align-items: center;
+  }
+  .ecoFamille {
+    flex-direction: column;
+  }
+  .romanPepites {
+    flex-direction: column;
   }
 }
