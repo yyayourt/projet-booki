@@ -164,7 +164,7 @@ input::placeholder {
 
 ul {
     display: grid;
-    grid-template-columns: 80px repeat(4, 165px);
+    grid-template-columns: 80px repeat(4, 160px);
     grid-template-rows: 1fr;
     gap: 10px;
     padding: 0px;
@@ -175,7 +175,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 165px;
+    width: 155px;
     height: 40px;
     border-style: solid;
     border-color: #d9d9d9;
@@ -643,6 +643,40 @@ footer {
         height: 40px;
     }
 
+    li p {
+        font-size: 14px;
+    }
+
+    ul {
+        grid-template-columns: repeat(4, 158px);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .eco {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .famille {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .romantique {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .pépites {
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    .bas {
+        width: auto;
+        padding: 15px 0px 0px 15px;
+    }
+
     .populaires {
         margin-top: 25px;
     }
@@ -729,36 +763,6 @@ footer {
     .activitésMarseille {
         display: flex;
         flex-direction: column;
-    }
-
-    ul {
-        grid-template-columns: repeat(4, 170px);
-        grid-template-rows: repeat(2, 1fr);
-    }
-
-    .eco {
-        grid-column: 1;
-        grid-row: 2;
-    }
-
-    .famille {
-        grid-column: 2;
-        grid-row: 2;
-    }
-
-    .romantique {
-        grid-column: 1;
-        grid-row: 3;
-    }
-
-    .pépites {
-        grid-column: 2;
-        grid-row: 3;
-    }
-
-    .bas {
-        width: auto;
-        padding: 15px 0px 0px 15px;
     }
 
     footer {
