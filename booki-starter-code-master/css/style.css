@@ -95,7 +95,7 @@ h1.title-head {
     font-weight: 700;
 }
 
-headline {
+.headline {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -162,9 +162,15 @@ input::placeholder {
     color: var(--main-bg-color);
 }
 
+.Filtres {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 ul {
     display: grid;
-    grid-template-columns: 80px repeat(4, 160px);
+    grid-template-columns: repeat(4, 160px);
     grid-template-rows: 1fr;
     gap: 10px;
     padding: 0px;
@@ -290,6 +296,10 @@ article {
     padding: 0px 9px;
 }
 
+.affichePlus {
+    font-weight: bold;
+}
+
 /****** Populaires ***********/
 
 .populaires {
@@ -351,19 +361,19 @@ article {
 .card-activités {
     padding: 0px;
     width: 22%;
-    height: 94%;
+    height: 100%;
 }
 
 .activitésMarseille {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 30px;
+    margin: 30px;
     gap: 30px;
 }
 
 .activités {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
 }
 
@@ -501,7 +511,7 @@ footer {
 
 @media (max-width: 875px) {
     .card-activités {
-        width: 90%;
+        width: 100%;
         height: 200px;
     }
 
@@ -517,31 +527,6 @@ footer {
 
     .sectionTop {
         height: auto;
-    }
-
-    ul {
-        grid-template-columns: repeat(4, 170px);
-        grid-template-rows: repeat(2, 1fr);
-    }
-
-    .eco {
-        grid-column: 1;
-        grid-row: 2;
-    }
-
-    .famille {
-        grid-column: 2;
-        grid-row: 2;
-    }
-
-    .romantique {
-        grid-column: 3;
-        grid-row: 2;
-    }
-
-    .pépites {
-        grid-column: 4;
-        grid-row: 2;
     }
 }
 
@@ -647,29 +632,34 @@ footer {
         font-size: 14px;
     }
 
+    .Filtres {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     ul {
-        grid-template-columns: repeat(4, 158px);
+        grid-template-columns: repeat(2, 158px);
         grid-template-rows: repeat(2, 1fr);
     }
 
     .eco {
         grid-column: 1;
-        grid-row: 2;
+        grid-row: 1;
     }
 
     .famille {
         grid-column: 2;
-        grid-row: 2;
+        grid-row: 1;
     }
 
     .romantique {
         grid-column: 1;
-        grid-row: 3;
+        grid-row: 2;
     }
 
     .pépites {
         grid-column: 2;
-        grid-row: 3;
+        grid-row: 2;
     }
 
     .bas {
@@ -779,9 +769,5 @@ footer {
 
     .populaires-cards {
         padding: 0px;
-    }
-
-    .card-activités {
-        width: 90%;
     }
 }
